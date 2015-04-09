@@ -7,8 +7,8 @@ $(document).ready(function() {
 		else if ((i%5) === 0) {
 			myBody.append(" buzz" + ", ");
 		}
-		else if (((i%3) && (i%5)) === 0) {
-			myBody.append(" fizzbuzz" + ", ");
+		else if (((i%3) === 0) && ((i%5) === 0)) {
+			myBody.append(" fizz buzz" + ", ");
 		}
 		else {
 			myBody.append(i + ", ");
